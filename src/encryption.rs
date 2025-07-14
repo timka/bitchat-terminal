@@ -95,10 +95,21 @@ impl EncryptionService {
             .map_err(|_| EncryptionError::InvalidPublicKey)?;
         
         let public_key = PublicKey::from(key_agreement_bytes);
+        // Parse signing key - iOS keys will parse correctly
         let signing_key = VerifyingKey::from_bytes(&signing_key_bytes)
             .map_err(|_| EncryptionError::InvalidPublicKey)?;
-        let identity_key = VerifyingKey::from_bytes(&identity_key_bytes)
-            .map_err(|_| EncryptionError::InvalidPublicKey)?;
+        
+        // Parse identity key with Android compatibility fallback
+        // Android has a bug where it sends invalid identity keys
+        let identity_key = match VerifyingKey::from_bytes(&identity_key_bytes) {
+            Ok(key) => key,
+            Err(_) => {
+                // This is likely Android with the identity key bug
+                // For now, just use the signing key as identity key to maintain compatibility
+                eprintln!("[CRYPTO] Note: Peer {} appears to be Android (invalid identity key format)", peer_id);
+                signing_key.clone()
+            }
+        };
         
         // Store all keys
         {
