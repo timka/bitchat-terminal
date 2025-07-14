@@ -67,7 +67,7 @@ sudo cargo run
 ```
 
 **Requirements**: Linux, Bluetooth LE, Rust 1.70+ -- 
-Have not tested on Windows and MacOS but should work natively on MacOS, it supports btleplug and other dependencies used by the temrinal client while Windows would require some changes to the code and further testing.
+Have not tested on Windows and MacOS but should work natively on MacOS, it supports btleplug and other dependencies used by the terminal client while Windows would require some changes to the code and further testing.
 
 
 > ⚠️ **Known Issues**: There is alot of client side functionality done on the rust client to work with ios and android seamlessly, it is ongoing process to get it 100% but will work soon.
