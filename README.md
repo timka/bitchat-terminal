@@ -59,11 +59,14 @@ Type `/help` in-app for the full command list.
 ```bash
 git clone https://github.com/ShilohEye/bitchat-terminal
 cd bitchat-terminal
-cargo build --release
+sudo cargo build --release
 sudo ./target/release/bitchat
+or 
+sudo cargo run
 ```
 
 **Requirements**: Linux, Bluetooth LE support, Rust 1.70+
+Have not tested on Windows and MacOS but should work natively on MacOS, it supports btleplug and other dependencies used by the temrinal client while Windows would require some changes to the code and testing.
 
 ## Debug Modes
 
