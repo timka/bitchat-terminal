@@ -41,6 +41,7 @@ sudo bitchat
 - **Privacy First** - No accounts, no tracking, no phone numbers
 - **Cross-Platform** - Compatible with iOS/Android BitChat apps
 
+
 ## Commands
 
 ```
@@ -75,6 +76,14 @@ sudo bitchat      # Clean output (default)
 sudo bitchat -d   # Connection info
 sudo bitchat -dd  # Full packet inspection
 ```
+
+## Screenshot:
+
+ 
+ <p align="center">
+    <img src="https://github.com/user-attachments/assets/6d2e9804-5ff5-4f6a-841e-a5e65b4b5223" alt="BitChat Terminal" width="700">
+  </p>
+
 
 ## Technical
 
