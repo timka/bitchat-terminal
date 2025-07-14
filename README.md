@@ -34,12 +34,12 @@ sudo bitchat
 
 ## Features
 
-- 🌐 **Mesh Networking** - Messages relay through peers to reach everyone
-- 🔐 **End-to-End Encryption** - X25519 + AES-256-GCM for private messages
-- 📡 **No Internet Required** - Works completely offline over Bluetooth LE
-- 💬 **Channels** - Public and password-protected group chats
-- 🔒 **Privacy First** - No accounts, no tracking, no phone numbers
-- 🤝 **Cross-Platform** - Compatible with iOS/Android BitChat apps
+- **Mesh Networking** - Messages relay through peers to reach everyone
+- **End-to-End Encryption** - X25519 + AES-256-GCM for private messages
+- **No Internet Required** - Works completely offline over Bluetooth LE
+- **Channels** - Public and password-protected group chats
+- **Privacy First** - No accounts, no tracking, no phone numbers
+- **Cross-Platform** - Compatible with iOS/Android BitChat apps
 
 ## Commands
 
