@@ -12,7 +12,7 @@
 
 **_bitch@ the terminal v1.0.0_**
 
-**Decentralized • Encrypted • Peer-to-Peer • Open Source**
+**Decentralized • Encrypted • Peer-to-Peer • Open Source | Written in Rust**
 
 </div>
 
