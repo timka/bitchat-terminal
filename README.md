@@ -78,7 +78,9 @@ Have not tested on Windows and MacOS but should work natively on MacOS, it suppo
 
 > ⚠️ **Known Issues**: There is alot of client side functionality done on the rust client to work with ios and android seamlessly, and I have had more issues working with some small features in android. it is ongoing process to get it 100% but will work soon.
 - Connection not found errors are typically fixed with a re run of the command, if that doesnt work restart bluetooth on the device runnign the rust client and try again.
+
 - Android Private Messages are currently not displaying, this is a client side issue I am looking to resolve, the goal is  to be 1:1 with the iOS version which is undergoing changes as well.
+
 - If you are having trouble and restarting the bluetooth on your device hasnt worked, then unpair all devices from phone(s) and rust client device and re-do mesh network again by running bitchat. I havent had any issues outside of these mentioned please submit for anything found  
 
 ## Debug Modes
