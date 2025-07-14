@@ -45,7 +45,7 @@ sudo bitchat
 
 ```
 /help              Show all commands
-/name <nick>       Set your nickname
+/name <newname>       Set your nickname
 /dm <user> [msg]   Private message
 /j #channel [pwd]  Join channel
 /block @user       Block a user
