@@ -30,6 +30,25 @@ A terminal client for BitChat - the decentralized, encrypted mesh network chat p
 
 - If you are having issues building the binary you can run ``cargo build --release`` and manually move the binary to ```/usr/local/bin``` 
 
+## Installing Rust (First Time Users)
+
+If you don't have Rust installed:
+
+```bash
+# Install Rust using the official installer
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
+# Follow the prompts (press 1 for default installation)
+# Then reload your shell configuration:
+source $HOME/.cargo/env
+
+# Verify installation
+rustc --version
+cargo --version
+```
+
+> **Note**: BitChat uses stable Rust (no nightly required). The installer will set up everything you need.
+
 ## Quick Start
 
 ```bash
