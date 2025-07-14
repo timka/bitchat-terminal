@@ -25,7 +25,7 @@ A terminal client for BitChat - the decentralized, encrypted mesh network chat p
 ## Quick Start
 
 ```bash
-# Install
+# Install (system-wide)
 sudo cargo install --git https://github.com/ShilohEye/bitchat-terminal --root /usr/local
 
 # Run (requires sudo for Bluetooth)
