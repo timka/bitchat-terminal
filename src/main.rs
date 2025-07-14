@@ -1865,6 +1865,8 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
                                  debug_full_println!("[DEBUG] Content length: {} bytes", message.content.len());
 
                                  if !bloom.check(&message.id) {
+                                     // Add to bloom filter immediately to prevent duplicate processing
+                                     bloom.set(&message.id);
 
                                      let sender_nick = peers_lock.get(&packet.sender_id_str)
                                          .and_then(|p| p.nickname.as_ref())
@@ -1975,8 +1977,6 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
                                                 std::io::stdout().flush().unwrap();
                                             }
                                         }
-
-                                     bloom.set(&message.id);
                                      
                                      // Send delivery ACK if needed (matching iOS behavior)
                                      let active_peer_count = peers_lock.len();
