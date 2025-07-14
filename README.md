@@ -22,6 +22,12 @@ A terminal client for BitChat - the decentralized, encrypted mesh network chat p
 
 > ⚠️ **Security Notice**: I have found & reported some security flaws in the current implementation that will hopefully be fixed in later releases with the Noise protocol. Private messages and channels are pending external audit. Use at your own risk for sensitive communications.
 
+> **Permissions**: BitChat-terminal needs sudo because Bluetooth Low Energy (BLE) access requires elevated permissions on Linux I believe macOS works without sudo on install. The btleplug library needs to interact with the
+  system's Bluetooth adapter directly, which is a privileged operation,similar to how packet capture tools need root access.
+- You can run ```sudo usermod -a -G bluetooth $USER``` and log out & back in before installing and you will be able to run without sudo.
+ 
+- Or you can  ```sudo setcap 'cap_net_raw,cap_net_admin+eip' /usr/local/bin/bitchat``` so that the binary has the necessary privileges to run.
+
 ## Quick Start
 
 ```bash
@@ -81,6 +87,11 @@ Have not tested on Windows and MacOS but should work natively on MacOS, it suppo
 sudo bitchat      # Clean output (default)
 sudo bitchat -d   # Connection info
 sudo bitchat -dd  # Full packet inspection
+
+or
+sudo cargo run      # Clean output (default)
+sudo cargo run -- -d   # Connection info
+sudo cargo run -- -dd  # Full packet inspection
 ```
 
 ## Screenshot:
