@@ -20,7 +20,7 @@
 
 A terminal client for BitChat - the decentralized, encrypted mesh network chat protocol that works over Bluetooth LE.
 
-> ⚠️ **Security Notice**: Private messages and channels are pending external audit. Use at your own risk for sensitive communications.
+> ⚠️ **Security Notice**: I have found & reported some security flaws in the current implementation that will hopefully be fixed in later releases with the Noise protocol. Private messages and channels are pending external audit. Use at your own risk for sensitive communications.
 
 ## Quick Start
 
