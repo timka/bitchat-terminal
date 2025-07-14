@@ -95,8 +95,8 @@ Public Domain
 Original Projects:
 
 The Rust Terminal implementation is based on the original Bitchat projects:
-Bitchat by @jackjackbits
-Bitchat-Android by @callebtc
+- bitchat by @jackjackbits
+- bitchat-android by @callebtc
 
 
 Part of the [BitChat ecosystem](https://github.com/permissionlesstech)
