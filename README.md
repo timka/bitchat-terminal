@@ -66,11 +66,17 @@ or
 sudo cargo run
 ```
 
-**Requirements**: Linux, Bluetooth LE support, Rust 1.70+ -- 
+**Requirements**: Linux, Bluetooth LE, Rust 1.70+ -- 
 Have not tested on Windows and MacOS but should work natively on MacOS, it supports btleplug and other dependencies used by the temrinal client while Windows would require some changes to the code and further testing.
 
-## Debug Modes
 
+> ⚠️ **Known Issues**: There is alot of client side functionality done on the rust client to work with ios and android seamlessly, it is ongoing process to get it 100% but will work soon.
+- Connection not found errors are typically fixed with a re run of the command, if that doesnt work restart bluetooth on the device runnign the rust client and try again.
+- Android Private Messages are currently not displaying, this is a client side issue I am looking to resolve, the goal is  to be 1:1 with the iOS version which is undergoing changes as well.
+- If you are having trouble and restarting the bluetooth on your device hasnt worked, then unpair all devices from phone(s) and rust client device and re-do mesh network again by running bitchat. I havent had any issues outside of these mentioned please submit for anything found  
+
+## Debug Modes
+- I would really reccomended taking a look at all of these for a better understanding of what is happening under the hood.
 ```bash
 sudo bitchat      # Clean output (default)
 sudo bitchat -d   # Connection info
