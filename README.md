@@ -32,7 +32,12 @@ A terminal client for BitChat - the decentralized, encrypted mesh network chat p
 
 ## Installing Rust (First Time Users)
 
-If you don't have Rust installed:
+Check if you have Rust installed and its version:
+```bash
+rustc --version
+```
+
+If you need to install or update Rust:
 
 ```bash
 # Install Rust using the official installer
@@ -42,12 +47,15 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 # Then reload your shell configuration:
 source $HOME/.cargo/env
 
-# Verify installation
+# If you already have Rust but need to update:
+rustup update
+
+# Verify you have 1.85 or newer:
 rustc --version
 cargo --version
 ```
 
-> **Note**: BitChat uses stable Rust (no nightly required). The installer will set up everything you need.
+> **Note**: BitChat requires Rust 1.85+ (stable, no nightly required) due to edition2024 dependencies. The installer will get you the latest stable version.
 
 ## Quick Start
 
@@ -93,7 +101,7 @@ or
 sudo cargo run
 ```
 
-**Requirements**: Linux, Bluetooth LE, Rust 1.70+ -- 
+**Requirements**: Linux, Bluetooth LE, Rust 1.85+ -- 
 Have not tested on Windows should work natively on MacOS without sudo, it supports btleplug and other dependencies used by the terminal client while Windows would require some changes to the code and further testing.
 
 
