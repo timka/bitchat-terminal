@@ -41,11 +41,6 @@ Thumbs.db
 *.temp
 textdump
 
-# Local development files
-CLAUDE.md
 
 # User data directory
 .bitchat/
-
-# Claude files
-.claude/
