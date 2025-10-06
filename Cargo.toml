@@ -1,7 +1,8 @@
 [package]
-name = "bitchat_poc"
+name = "bitchat-terminal"
 version = "0.1.0"
 edition = "2021"
+description = "POC bitchat client"
 
 [[bin]]
 name = "bitchat"

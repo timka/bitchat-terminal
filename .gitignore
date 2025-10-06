@@ -2,7 +2,7 @@
 /target/
 **/*.rs.bk
 *.pdb
-Cargo.lock
+# Cargo.lock
 
 # IDE
 .idea/
@@ -44,3 +44,6 @@ textdump
 
 # User data directory
 .bitchat/
+
+#nix
+result
